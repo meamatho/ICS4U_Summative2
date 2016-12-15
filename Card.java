@@ -7,7 +7,6 @@ public class Card {
 	private int hp;
 	private boolean effect;
 	private int target;
-	private int dur;
 	
 	//minions
 	protected Card(String name, int cost, int atk, int hp, boolean effect, int target){
@@ -15,7 +14,7 @@ public class Card {
 		this.hp=hp;
 		this.name = name;
 		
-		//enter targeting stuff here?
+		//enter targeting stuff here? for battlecries and such?
 		
 	}
 	
@@ -27,7 +26,7 @@ public class Card {
 	//weapons
 	//if we're treating face as a card and weaps don't have durability, 
 	//what's the point of this class? We can code it as a giant minion
-	protected Card(String name, int cost, int atk, int dur){
+	protected Card(String name, int cost, boolean effect, int atk){
 		this.name = name;
 	}
 	

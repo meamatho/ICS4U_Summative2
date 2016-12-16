@@ -1,12 +1,13 @@
+import java.awt.*;
 
-public class Card {
+public class Card{
 
-	private String name;
-	private int cost;
-	private int atk;
-	private int hp;
-	private boolean effect;
-	private int target;
+	protected String name;
+	protected int cost;
+	protected int atk;
+	protected int hp;
+	protected boolean effect;
+	protected int target;
 	
 	//minions
 	protected Card(String name, int cost, int atk, int hp, boolean effect, int target){
@@ -28,6 +29,10 @@ public class Card {
 	//what's the point of this class? We can code it as a giant minion
 	protected Card(String name, int cost, boolean effect, int atk){
 		this.name = name;
+	}
+	
+	public int getCost(){
+		return cost;
 	}
 	
 	public int getAtk(){
@@ -54,4 +59,11 @@ public class Card {
 		return hp;
 	}
 	
+	public void draw(Graphics g){
+		
+	}
+	
+	public void play(){
+		
+	}
 }
